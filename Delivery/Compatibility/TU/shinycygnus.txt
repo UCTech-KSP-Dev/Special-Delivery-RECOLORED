@@ -1,0 +1,43 @@
+@REFLECTION_CONFIG[default]
+	{
+		%enabled = true
+	}
+
+	KSP_MODEL_SHADER
+	{
+		name = Cygnus
+		model = Delivery/parts/fuselage/cygnus/_cygnus_fuselage_s1p5_1
+
+	MATERIAL
+	{
+		shader = TU/Metallic
+
+		Texture = _MainTex, Delivery/Compatibility/TU/texture_cygnus_general_1_TUDiff
+
+		inheritTexture = _BumpMap
+		inheritTexture = _Emissive
+
+		texture = _MetallicGlossMap, Delivery/Compatibility/TU/texture_cygnus_general_1_TUDiff
+		texture = _AOMap, Delivery/Compatibility/TU/texture_cygnus_general_1_TUDiff
+
+
+
+		PROPERTY
+		{
+			name = _Color
+			color = 1.1, 1.1, 1.1
+		}
+		PROPERTY
+		{
+			name = _Metal
+			float = 0.5
+		}
+		PROPERTY
+		{
+			name = _Smoothness
+			float = 0.96
+		}
+	}
+}
+
+
